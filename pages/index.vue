@@ -10,5 +10,10 @@
     <v-btn variant="outlined" color="primary"
       >test <v-icon>mdi-pencil</v-icon></v-btn
     >
+    <Account v-if="user" />
+    <Auth v-else />
   </div>
 </template>
+<script setup>
+const user = useSupabaseUser();
+</script>
