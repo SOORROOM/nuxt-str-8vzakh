@@ -31,8 +31,7 @@
     </v-navigation-drawer>
     <v-app-bar
       density="compact"
-      :collapse-on-scroll="$vuetify.display.mobile"
-      app
+      :collapse="$vuetify.display.mobile"
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-icon class="mx-3" color="orange">mdi-compass</v-icon>
