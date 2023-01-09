@@ -1,18 +1,17 @@
 <template>
   <form class="row flex-center flex" @submit.prevent="handleLogin">
     <div class="col-6 form-widget">
-      <h1 class="header">Supabase + Nuxt 3</h1>
-      <p class="description">Sign in via magic link with your email below</p>
+      <div class="text-h3">Supabase + Nuxt 3</div>
+      <div class="text-body-1">Sign in via magic link with your email below</div>
       <div>
-        <input class="inputField" type="email" placeholder="Your email" v-model="email" />
+        <v-text-field label="Your email" variant="outlined" v-model="email" placeholder="johndoe@gmail.com"
+  type="email"></v-text-field>
+
       </div>
       <div>
-        <input
-          type="submit"
-          class="button block"
-          :value="loading ? 'Loading' : 'Send magic link'"
-          :disabled="loading"
-        />
+        <v-btn variant="outlined" color="primary"
+        :value="loading ? 'Loading' : 'Send magic link'" :disabled="loading"></v-btn>
+        
       </div>
     </div>
   </form>
