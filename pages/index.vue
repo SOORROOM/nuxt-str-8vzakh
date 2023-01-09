@@ -1,6 +1,6 @@
 <template>
   <div>
-    page index
+    page index modif
     <v-card v-for="i in 7" width="400">
       <v-card-title>This is a title</v-card-title>
       <v-card-subtitle>This is a subtitle</v-card-subtitle>
